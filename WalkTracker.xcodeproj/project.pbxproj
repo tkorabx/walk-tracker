@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160FE544282667E50014E72E /* RawResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE543282667E50014E72E /* RawResource.swift */; };
+		160FE5462826694A0014E72E /* GeoSearchedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE5452826694A0014E72E /* GeoSearchedPhotos.swift */; };
+		160FE5482826699F0014E72E /* PhotoSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE5472826699F0014E72E /* PhotoSizes.swift */; };
+		160FE54A28266A9B0014E72E /* GeoSearchPhotoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE54928266A9B0014E72E /* GeoSearchPhotoUseCase.swift */; };
+		160FE54C28266C170014E72E /* GeoSearchPhotosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE54B28266C170014E72E /* GeoSearchPhotosRepository.swift */; };
+		160FE54E28266CB60014E72E /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE54D28266CB60014E72E /* RequestBuilder.swift */; };
+		160FE55228266D5F0014E72E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE55128266D5F0014E72E /* Environment.swift */; };
+		160FE554282679590014E72E /* GetPhotoDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE553282679590014E72E /* GetPhotoDataUseCase.swift */; };
+		160FE55628268F2F0014E72E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE55528268F2F0014E72E /* ListViewModel.swift */; };
+		160FE558282693670014E72E /* GetPhotoSizesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE557282693670014E72E /* GetPhotoSizesRepository.swift */; };
+		160FE55A2826940B0014E72E /* GetPhotoDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE5592826940B0014E72E /* GetPhotoDataRepository.swift */; };
+		160FE55E282694610014E72E /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE55D282694610014E72E /* RowViewModel.swift */; };
+		160FE5602826946D0014E72E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE55F2826946D0014E72E /* RowView.swift */; };
+		160FE5622827ACA50014E72E /* GeoDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE5612827ACA50014E72E /* GeoDataRepository.swift */; };
+		160FE5642827B3760014E72E /* GeoDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FE5632827B3760014E72E /* GeoDataUseCase.swift */; };
+		1641370528264FF400B16747 /* AppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1641370428264FF400B16747 /* AppLauncher.swift */; };
+		1641370728264FF400B16747 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1641370628264FF400B16747 /* ListView.swift */; };
+		1641370928264FF500B16747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1641370828264FF500B16747 /* Assets.xcassets */; };
+		1641370C28264FF500B16747 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1641370B28264FF500B16747 /* Preview Assets.xcassets */; };
+		1641373C282656E600B16747 /* ApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16413738282656E600B16747 /* ApiClientProtocol.swift */; };
+		1641373F282656E600B16747 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1641373B282656E600B16747 /* ApiClient.swift */; };
+		165361C528281F3B00912A44 /* Amersfoort-15KM:H.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 165361C428281F3B00912A44 /* Amersfoort-15KM:H.gpx */; };
+		165361C72828205D00912A44 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165361C62828205D00912A44 /* Logging.swift */; };
+		165361CA282826AC00912A44 /* Hamburg-30KM:H.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 165361C9282826AC00912A44 /* Hamburg-30KM:H.gpx */; };
+		165361CD28282C2D00912A44 /* PhotoDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165361CC28282C2D00912A44 /* PhotoDataCache.swift */; };
+		1679CE53282878AD008EC219 /* ApiClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE52282878AD008EC219 /* ApiClientStub.swift */; };
+		1679CE5B28287BCE008EC219 /* GeoSearchPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1679CE5A28287BCE008EC219 /* GeoSearchPhotos.json */; };
+		1679CE5D28287C12008EC219 /* GeoPhotoSizes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1679CE5C28287C12008EC219 /* GeoPhotoSizes.json */; };
+		1679CE5F2828DE23008EC219 /* Warsaw-60KM:H.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1679CE5E2828DE23008EC219 /* Warsaw-60KM:H.gpx */; };
+		1679CE642828DF45008EC219 /* RequestAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE622828DF45008EC219 /* RequestAnalyzer.swift */; };
+		1679CE652828DF45008EC219 /* Expectations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE632828DF45008EC219 /* Expectations.swift */; };
+		1679CE672828DF8C008EC219 /* GeoSearchPhotosRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE662828DF8C008EC219 /* GeoSearchPhotosRepositoryTests.swift */; };
+		1679CE692828E2D7008EC219 /* ApiClientProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE682828E2D7008EC219 /* ApiClientProtocolTests.swift */; };
+		1679CE6D2828E642008EC219 /* GetPhotoDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE6C2828E642008EC219 /* GetPhotoDataUseCaseTests.swift */; };
+		1679CE702828E8D3008EC219 /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE6F2828E8D3008EC219 /* ListViewModelTests.swift */; };
+		1679CE722828F0CD008EC219 /* GeoDataRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679CE712828F0CD008EC219 /* GeoDataRepositoryTests.swift */; };
+		167CD3C12828599A0086A86E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 167CD3C32828599A0086A86E /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1641371228264FF600B16747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 164136F928264FF400B16747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1641370028264FF400B16747;
+			remoteInfo = WalkTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		160FE543282667E50014E72E /* RawResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawResource.swift; sourceTree = "<group>"; };
+		160FE5452826694A0014E72E /* GeoSearchedPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchedPhotos.swift; sourceTree = "<group>"; };
+		160FE5472826699F0014E72E /* PhotoSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSizes.swift; sourceTree = "<group>"; };
+		160FE54928266A9B0014E72E /* GeoSearchPhotoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchPhotoUseCase.swift; sourceTree = "<group>"; };
+		160FE54B28266C170014E72E /* GeoSearchPhotosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchPhotosRepository.swift; sourceTree = "<group>"; };
+		160FE54D28266CB60014E72E /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		160FE55128266D5F0014E72E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		160FE553282679590014E72E /* GetPhotoDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoDataUseCase.swift; sourceTree = "<group>"; };
+		160FE55528268F2F0014E72E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		160FE557282693670014E72E /* GetPhotoSizesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoSizesRepository.swift; sourceTree = "<group>"; };
+		160FE5592826940B0014E72E /* GetPhotoDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoDataRepository.swift; sourceTree = "<group>"; };
+		160FE55D282694610014E72E /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
+		160FE55F2826946D0014E72E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		160FE5612827ACA50014E72E /* GeoDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoDataRepository.swift; sourceTree = "<group>"; };
+		160FE5632827B3760014E72E /* GeoDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoDataUseCase.swift; sourceTree = "<group>"; };
+		1641370128264FF400B16747 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1641370428264FF400B16747 /* AppLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLauncher.swift; sourceTree = "<group>"; };
+		1641370628264FF400B16747 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		1641370828264FF500B16747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1641370B28264FF500B16747 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1641371128264FF600B16747 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16413738282656E600B16747 /* ApiClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientProtocol.swift; sourceTree = "<group>"; };
+		1641373B282656E600B16747 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		165361C428281F3B00912A44 /* Amersfoort-15KM:H.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Amersfoort-15KM:H.gpx"; sourceTree = "<group>"; };
+		165361C62828205D00912A44 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		165361C9282826AC00912A44 /* Hamburg-30KM:H.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Hamburg-30KM:H.gpx"; sourceTree = "<group>"; };
+		165361CC28282C2D00912A44 /* PhotoDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataCache.swift; sourceTree = "<group>"; };
+		1679CE4F28287115008EC219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1679CE50282873BC008EC219 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		1679CE51282873C3008EC219 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1679CE52282878AD008EC219 /* ApiClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientStub.swift; sourceTree = "<group>"; };
+		1679CE5728287A05008EC219 /* Offline.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Offline.xcconfig; sourceTree = "<group>"; };
+		1679CE5A28287BCE008EC219 /* GeoSearchPhotos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GeoSearchPhotos.json; sourceTree = "<group>"; };
+		1679CE5C28287C12008EC219 /* GeoPhotoSizes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GeoPhotoSizes.json; sourceTree = "<group>"; };
+		1679CE5E2828DE23008EC219 /* Warsaw-60KM:H.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Warsaw-60KM:H.gpx"; sourceTree = "<group>"; };
+		1679CE622828DF45008EC219 /* RequestAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestAnalyzer.swift; sourceTree = "<group>"; };
+		1679CE632828DF45008EC219 /* Expectations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectations.swift; sourceTree = "<group>"; };
+		1679CE662828DF8C008EC219 /* GeoSearchPhotosRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoSearchPhotosRepositoryTests.swift; sourceTree = "<group>"; };
+		1679CE682828E2D7008EC219 /* ApiClientProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientProtocolTests.swift; sourceTree = "<group>"; };
+		1679CE6C2828E642008EC219 /* GetPhotoDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoDataUseCaseTests.swift; sourceTree = "<group>"; };
+		1679CE6F2828E8D3008EC219 /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		1679CE712828F0CD008EC219 /* GeoDataRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoDataRepositoryTests.swift; sourceTree = "<group>"; };
+		167CD3C22828599A0086A86E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		164136FE28264FF400B16747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1641370E28264FF600B16747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160FE55B282694560014E72E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1641370628264FF400B16747 /* ListView.swift */,
+				160FE55528268F2F0014E72E /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		160FE55C2826945D0014E72E /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				160FE55D282694610014E72E /* RowViewModel.swift */,
+				160FE55F2826946D0014E72E /* RowView.swift */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		164136F828264FF400B16747 = {
+			isa = PBXGroup;
+			children = (
+				1641370328264FF400B16747 /* WalkTracker */,
+				1641371428264FF600B16747 /* WalkTrackerTests */,
+				1641370228264FF400B16747 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1641370228264FF400B16747 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1641370128264FF400B16747 /* App.app */,
+				1641371128264FF600B16747 /* UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1641370328264FF400B16747 /* WalkTracker */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE4F28287115008EC219 /* Info.plist */,
+				1641372F2826564B00B16747 /* Domain */,
+				1641372E2826564800B16747 /* Data */,
+				164137302826565300B16747 /* Presentation */,
+				164137332826566A00B16747 /* Others */,
+				164137312826565D00B16747 /* Resources */,
+			);
+			path = WalkTracker;
+			sourceTree = "<group>";
+		};
+		1641370A28264FF500B16747 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1641370B28264FF500B16747 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1641371428264FF600B16747 /* WalkTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE612828DF33008EC219 /* Tests */,
+				1679CE602828DF2E008EC219 /* Support */,
+			);
+			path = WalkTrackerTests;
+			sourceTree = "<group>";
+		};
+		1641372E2826564800B16747 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				164137412826570100B16747 /* RequestBuilder */,
+				16413740282656F600B16747 /* Repositories */,
+				16413737282656E600B16747 /* ApiClient */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1641372F2826564B00B16747 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				16413736282656D500B16747 /* Entities */,
+				16413735282656D000B16747 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		164137302826565300B16747 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				160FE55C2826945D0014E72E /* Row */,
+				160FE55B282694560014E72E /* List */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		164137312826565D00B16747 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE5828287BA1008EC219 /* Stubs */,
+				1679CE5928287BA6008EC219 /* GPX */,
+				1641370828264FF500B16747 /* Assets.xcassets */,
+				167CD3C32828599A0086A86E /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		164137332826566A00B16747 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1641370A28264FF500B16747 /* Preview Content */,
+				165361CB28282C2600912A44 /* Cache */,
+				164137342826568500B16747 /* Configuration */,
+				165361C8282822AE00912A44 /* Logs */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		164137342826568500B16747 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1641370428264FF400B16747 /* AppLauncher.swift */,
+				160FE55128266D5F0014E72E /* Environment.swift */,
+				1679CE50282873BC008EC219 /* Debug.xcconfig */,
+				1679CE5728287A05008EC219 /* Offline.xcconfig */,
+				1679CE51282873C3008EC219 /* Release.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		16413735282656D000B16747 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				160FE54928266A9B0014E72E /* GeoSearchPhotoUseCase.swift */,
+				160FE553282679590014E72E /* GetPhotoDataUseCase.swift */,
+				160FE5632827B3760014E72E /* GeoDataUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		16413736282656D500B16747 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				160FE543282667E50014E72E /* RawResource.swift */,
+				160FE5452826694A0014E72E /* GeoSearchedPhotos.swift */,
+				160FE5472826699F0014E72E /* PhotoSizes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		16413737282656E600B16747 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				16413738282656E600B16747 /* ApiClientProtocol.swift */,
+				1641373B282656E600B16747 /* ApiClient.swift */,
+				1679CE52282878AD008EC219 /* ApiClientStub.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		16413740282656F600B16747 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				160FE54B28266C170014E72E /* GeoSearchPhotosRepository.swift */,
+				160FE557282693670014E72E /* GetPhotoSizesRepository.swift */,
+				160FE5592826940B0014E72E /* GetPhotoDataRepository.swift */,
+				160FE5612827ACA50014E72E /* GeoDataRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		164137412826570100B16747 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				160FE54D28266CB60014E72E /* RequestBuilder.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		165361C8282822AE00912A44 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				165361C62828205D00912A44 /* Logging.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		165361CB28282C2600912A44 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				165361CC28282C2D00912A44 /* PhotoDataCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		1679CE5828287BA1008EC219 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE5A28287BCE008EC219 /* GeoSearchPhotos.json */,
+				1679CE5C28287C12008EC219 /* GeoPhotoSizes.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		1679CE5928287BA6008EC219 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE5E2828DE23008EC219 /* Warsaw-60KM:H.gpx */,
+				165361C9282826AC00912A44 /* Hamburg-30KM:H.gpx */,
+				165361C428281F3B00912A44 /* Amersfoort-15KM:H.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+		1679CE602828DF2E008EC219 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE632828DF45008EC219 /* Expectations.swift */,
+				1679CE622828DF45008EC219 /* RequestAnalyzer.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1679CE612828DF33008EC219 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE6E2828E873008EC219 /* Presentation */,
+				1679CE6B2828E63B008EC219 /* Domain */,
+				1679CE6A2828E632008EC219 /* Data */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1679CE6A2828E632008EC219 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE662828DF8C008EC219 /* GeoSearchPhotosRepositoryTests.swift */,
+				1679CE682828E2D7008EC219 /* ApiClientProtocolTests.swift */,
+				1679CE712828F0CD008EC219 /* GeoDataRepositoryTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1679CE6B2828E63B008EC219 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE6C2828E642008EC219 /* GetPhotoDataUseCaseTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1679CE6E2828E873008EC219 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1679CE6F2828E8D3008EC219 /* ListViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1641370028264FF400B16747 /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1641372528264FF600B16747 /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				164136FD28264FF400B16747 /* Sources */,
+				164136FE28264FF400B16747 /* Frameworks */,
+				164136FF28264FF400B16747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App;
+			productName = WalkTracker;
+			productReference = 1641370128264FF400B16747 /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1641371028264FF600B16747 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1641372828264FF600B16747 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				1641370D28264FF600B16747 /* Sources */,
+				1641370E28264FF600B16747 /* Frameworks */,
+				1641370F28264FF600B16747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1641371328264FF600B16747 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = WalkTrackerTests;
+			productReference = 1641371128264FF600B16747 /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		164136F928264FF400B16747 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1641370028264FF400B16747 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					1641371028264FF600B16747 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1641370028264FF400B16747;
+					};
+				};
+			};
+			buildConfigurationList = 164136FC28264FF400B16747 /* Build configuration list for PBXProject "WalkTracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 164136F828264FF400B16747;
+			productRefGroup = 1641370228264FF400B16747 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1641370028264FF400B16747 /* App */,
+				1641371028264FF600B16747 /* UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		164136FF28264FF400B16747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1679CE5F2828DE23008EC219 /* Warsaw-60KM:H.gpx in Resources */,
+				1679CE5D28287C12008EC219 /* GeoPhotoSizes.json in Resources */,
+				167CD3C12828599A0086A86E /* Localizable.strings in Resources */,
+				1641370C28264FF500B16747 /* Preview Assets.xcassets in Resources */,
+				1679CE5B28287BCE008EC219 /* GeoSearchPhotos.json in Resources */,
+				165361C528281F3B00912A44 /* Amersfoort-15KM:H.gpx in Resources */,
+				1641370928264FF500B16747 /* Assets.xcassets in Resources */,
+				165361CA282826AC00912A44 /* Hamburg-30KM:H.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1641370F28264FF600B16747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		164136FD28264FF400B16747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				160FE554282679590014E72E /* GetPhotoDataUseCase.swift in Sources */,
+				1679CE53282878AD008EC219 /* ApiClientStub.swift in Sources */,
+				160FE5622827ACA50014E72E /* GeoDataRepository.swift in Sources */,
+				1641370728264FF400B16747 /* ListView.swift in Sources */,
+				160FE55228266D5F0014E72E /* Environment.swift in Sources */,
+				160FE5482826699F0014E72E /* PhotoSizes.swift in Sources */,
+				1641373C282656E600B16747 /* ApiClientProtocol.swift in Sources */,
+				160FE544282667E50014E72E /* RawResource.swift in Sources */,
+				160FE558282693670014E72E /* GetPhotoSizesRepository.swift in Sources */,
+				1641370528264FF400B16747 /* AppLauncher.swift in Sources */,
+				160FE54E28266CB60014E72E /* RequestBuilder.swift in Sources */,
+				160FE5602826946D0014E72E /* RowView.swift in Sources */,
+				160FE5642827B3760014E72E /* GeoDataUseCase.swift in Sources */,
+				1641373F282656E600B16747 /* ApiClient.swift in Sources */,
+				160FE55628268F2F0014E72E /* ListViewModel.swift in Sources */,
+				160FE55E282694610014E72E /* RowViewModel.swift in Sources */,
+				165361C72828205D00912A44 /* Logging.swift in Sources */,
+				160FE54A28266A9B0014E72E /* GeoSearchPhotoUseCase.swift in Sources */,
+				165361CD28282C2D00912A44 /* PhotoDataCache.swift in Sources */,
+				160FE5462826694A0014E72E /* GeoSearchedPhotos.swift in Sources */,
+				160FE55A2826940B0014E72E /* GetPhotoDataRepository.swift in Sources */,
+				160FE54C28266C170014E72E /* GeoSearchPhotosRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1641370D28264FF600B16747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1679CE6D2828E642008EC219 /* GetPhotoDataUseCaseTests.swift in Sources */,
+				1679CE722828F0CD008EC219 /* GeoDataRepositoryTests.swift in Sources */,
+				1679CE672828DF8C008EC219 /* GeoSearchPhotosRepositoryTests.swift in Sources */,
+				1679CE702828E8D3008EC219 /* ListViewModelTests.swift in Sources */,
+				1679CE692828E2D7008EC219 /* ApiClientProtocolTests.swift in Sources */,
+				1679CE652828DF45008EC219 /* Expectations.swift in Sources */,
+				1679CE642828DF45008EC219 /* RequestAnalyzer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1641371328264FF600B16747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1641370028264FF400B16747 /* App */;
+			targetProxy = 1641371228264FF600B16747 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		167CD3C32828599A0086A86E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				167CD3C22828599A0086A86E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1641372328264FF600B16747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE50282873BC008EC219 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1641372428264FF600B16747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE51282873C3008EC219 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1641372628264FF600B16747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE50282873BC008EC219 /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalkTracker/Others/Preview Content\"";
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Walk Tracker needs location data to fetch images for your walk.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1641372728264FF600B16747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE51282873C3008EC219 /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalkTracker/Others/Preview Content\"";
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Walk Tracker needs location data to fetch images for your walk.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1641372928264FF600B16747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE50282873BC008EC219 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Debug;
+		};
+		1641372A28264FF600B16747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE51282873C3008EC219 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Release;
+		};
+		1679CE54282879EB008EC219 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE5728287A05008EC219 /* Offline.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Offline;
+		};
+		1679CE55282879EB008EC219 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE5728287A05008EC219 /* Offline.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalkTracker/Others/Preview Content\"";
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkTracker/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Walk Tracker needs location data to fetch images for your walk.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Offline;
+		};
+		1679CE56282879EB008EC219 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1679CE5728287A05008EC219 /* Offline.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY6QRY485S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.WalkTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Offline;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		164136FC28264FF400B16747 /* Build configuration list for PBXProject "WalkTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1641372328264FF600B16747 /* Debug */,
+				1679CE54282879EB008EC219 /* Offline */,
+				1641372428264FF600B16747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1641372528264FF600B16747 /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1641372628264FF600B16747 /* Debug */,
+				1679CE55282879EB008EC219 /* Offline */,
+				1641372728264FF600B16747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1641372828264FF600B16747 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1641372928264FF600B16747 /* Debug */,
+				1679CE56282879EB008EC219 /* Offline */,
+				1641372A28264FF600B16747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 164136F928264FF400B16747 /* Project object */;
+}

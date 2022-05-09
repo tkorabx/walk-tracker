@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>APPLICATION_URL_SCHEME</key>
+	<string>$(APPLICATION_URL_SCHEME)</string>
+	<key>APPLICATION_URL_HOST</key>
+	<string>$(APPLICATION_URL_HOST)</string>
+	<key>APPLICATION_FLICKR_API_KEY</key>
+	<string>$(APPLICATION_FLICKR_API_KEY)</string>
+	<key>APPLICATION_LOGGING_ENABLED</key>
+	<string>$(APPLICATION_LOGGING_ENABLED)</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+"idle.title" = "Walk Tracker";
+"idle.description" = "Press the button and begin your adventure. Application will show list of places you visited.";
+"idle.button.title" = "Start";
+
+"no.permissions.title" = "Location Services Disabled";
+"no.permissions.description" = "Unfortunately, Location Services are not working for us. Make sure Location Services are enabled and you have granted permissions for the application.";
+"no.permissions.button.title" = "Open Settings";
+
+"empty.title" = "Start Walking";
+"empty.description" = "Application will show images from your adventure after some time.";
+
+"alert.title" = "Uppps!";
+"alert.description" = "We couldn't load photo data. Make sure your have Internet Connection enabled.";
+"alert.ok" = "OK";
+
+"navigation.stop.button.title" = "Stop";
