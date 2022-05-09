@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1641370028264FF400B16747"
-               BuildableName = "WalkTracker.app"
+               BuildableName = "App.app"
                BlueprintName = "App"
                ReferencedContainer = "container:WalkTracker.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1641371028264FF600B16747"
-               BuildableName = "WalkTrackerTests.xctest"
+               BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
                ReferencedContainer = "container:WalkTracker.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1641370028264FF400B16747"
-            BuildableName = "WalkTracker.app"
+            BuildableName = "App.app"
             BlueprintName = "App"
             ReferencedContainer = "container:WalkTracker.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1641370028264FF400B16747"
-            BuildableName = "WalkTracker.app"
+            BuildableName = "App.app"
             BlueprintName = "App"
             ReferencedContainer = "container:WalkTracker.xcodeproj">
          </BuildableReference>
