@@ -28,7 +28,7 @@ If you are using simulator, make sure to have default location or GPX file chose
 
 ## Schemes
 - App Online - Use to connect with Flickr API
-- App Offline - Use application with interacting with remote services (mechanism faking responses using JSON files in Project)
+- App Offline - Use application without interacting with remote services (mechanism faking responses using JSON files in Project)
 - Unit Tests - **Use for running tests**. It contains a mechanism for faking responses (the same which is used in App Offline)
 
 ## Configurations
